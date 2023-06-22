@@ -1,5 +1,5 @@
 #include "monty.h"
-/*bus_t bus = {NULL, NULL, NULL, 0};*/
+bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
 * main - monty code interpreter
@@ -9,7 +9,7 @@
 */
 int main(int argc, char *argv[])
 {
-	bus_t bus = {NULL, NULL, NULL, 0};
+	/*bus_t bus = {NULL, NULL, NULL, 0};*/
 	char *content;
 	FILE *file;
 	size_t size = 0;
