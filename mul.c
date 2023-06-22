@@ -7,13 +7,13 @@
 */
 void f_mul(stack_t **head, unsigned int counter)
 {
-	stack_t *x;
+	stack_t *k;
 	int len = 0, aux;
 
-	x = *head;
-	while (x)
+	k = *head;
+	while (k)
 	{
-		x = x->next;
+		k = k->next;
 		len++;
 	}
 	if (len < 2)
@@ -24,9 +24,9 @@ void f_mul(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	x = *head;
-	aux = x->next->n * x->n;
-	x->next->n = aux;
-	*head = x->next;
-	free(x);
+	k = *head;
+	aux = k->next->n * k->n;
+	k->next->n = aux;
+	*head = k->next;
+	free(k);
 }
